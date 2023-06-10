@@ -19,6 +19,7 @@ struct ContentView: View {
                     HStack {
                         VStack(alignment: .leading) {
                             Text(post.title)
+                                .font(.headline)
                                 .multilineTextAlignment(.leading)
                             if let author = post.author {
                                 Text("——"+author)
